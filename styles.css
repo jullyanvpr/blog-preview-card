@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "figtree";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf),
+    url(assets/fonts/static/Figtree-SemiBold.ttf),
+    url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+:root {
+    --yellow: #f4d04e;
+    --white: #ffffff;
+    --grey: #808080;
+    --black: #121212;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "figtree";
+}
+
+.main {
+    width: 100vw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow)
+}
+
+.background {
+    width: 24rem;
+    /* height: 35rem; */
+    background-color: var(--white);
+    border-radius: 15px;
+    border: solid var(--black) 2px;
+    box-shadow: 8px 8px var(--black);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* O padding é CRUCIAL no alinhamento dos itens, tanto texto como imagem. */
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.container__illustration {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* A importância de adicionar uma camada para conter 
+    a imagem é para poder centralizar a imagem com melhor responsividade. */
+}
+
+.illustration{
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.button {
+    width: 5rem;
+    height: 1.5rem;
+    margin-top: 20px;
+    padding: 15px 45px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    border-radius: 4px;
+
+}
+
+.button__text {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.date {
+    margin-top: 20px;
+    font-size: .9rem;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.article {
+    margin-top: 20px;
+    color: var(--grey);
+}
+
+.container__author {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.authorpicfile {
+    width: 2rem;
+    margin-right: 15px;
+}
+
+.authorname {
+    font-weight: 800;
+    transform: translateY(-3px);
+}

@@ -37,6 +37,7 @@
     border-radius: 15px;
     border: solid var(--black) 2px;
     box-shadow: 8px 8px var(--black);
+    transition: box-shadow .3s ease;
 }
 
 .container {
@@ -70,7 +71,6 @@
     align-items: center;
     background-color: var(--yellow);
     border-radius: 4px;
-
 }
 
 .button__text {
@@ -87,6 +87,15 @@
     margin-top: 20px;
     font-size: 1.5rem;
     font-weight: 800;
+}
+
+.title:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.background.hover {
+    box-shadow: 12px 12px var(--black);
 }
 
 .article {

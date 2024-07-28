@@ -9,13 +9,13 @@
 </head>
 <body>
   <main class="main">
-    <div class="background">
+    <div id="card" class="background">
       <div class="container">
         <div class="container__illustration">
           <img class="illustration" src="./assets/images/illustration-article.svg" alt="illustration">
         </div>
         <div class="button"><p class="button__text">Learning</p></div>
-        <p class="date">Published 21 Dec 2023</p>
+        <p class="date">Published 26 Jul 2024</p>
         <h1 class="title">HTML & CSS foundations</h1>
         <p class="article">These languages are the backbone of every
           website, defining structure, content and presentation.</p>
@@ -25,24 +25,18 @@
           </div>
           <p class="authorname">Jullyan Gomes</p>
         </div>
-        
-
       </div>
-
     </div>
-    <!--
-    Learning
-    Published 21 Dec 2023
-    HTML & CSS foundations
-    These languages are the backbone of every website, defining structure, content, and presentation.
-    Jullyan Gomes
-    -->
-
+    <script>
+      document.querySelector('.title').addEventListener('mouseover', function() {
+        document.getElementById('card').classList.add('hover');
+      });
+    
+      document.querySelector('.title').addEventListener('mouseout', function() {
+        document.getElementById('card').classList.remove('hover');
+      });
+    </script>
+    
   </main>
-
-
-
-
-
 </body>
 </html>
